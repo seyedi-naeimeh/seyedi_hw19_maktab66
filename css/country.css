@@ -1,0 +1,131 @@
+.body {
+  background-color: #fff;
+}
+
+.body p {
+  font-size: 9px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.country span {
+  color: rgba(24, 23, 23, 0.616);
+}
+
+.country .country-img {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  -ms-flex-preferred-size: 270px;
+      flex-basis: 270px;
+}
+
+.country .country-img img {
+  width: 30vw;
+  height: auto;
+}
+
+.country .country-details {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.country .country-details .country-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.country .country-details .country-info .country-info1 {
+  padding-right: 50px;
+}
+
+.country .country-details .country-info .country-info2 {
+  padding-top: 36px;
+}
+
+.borders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.borders .country-borders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.borders .country-borders ul {
+  margin-left: 2px;
+  margin-right: 2px;
+  padding: 3px 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  text-align: center;
+  color: rgba(24, 23, 23, 0.616);
+}
+
+.backBTN {
+  cursor: pointer;
+  padding: 5px;
+  width: 80px;
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: inherit !important;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border: 1px solid rgba(255, 255, 255, 0.829);
+}
+
+@media (max-width: 350px) {
+  .country {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .country .country-details .country-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .country .country-details {
+    padding-left: 20px;
+  }
+  .country .country-img {
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+  }
+  .country img {
+    width: 90%  !important;
+  }
+  .country-info2 {
+    padding-top: 5px !important;
+    text-align: left;
+  }
+  .borders {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=country.css.map */
